@@ -103,7 +103,7 @@ class Individual:
         return blood_types
 
   #CODED BY: PEDRO R.BARROS
-
+  #Bloco02
 
          
         
