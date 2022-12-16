@@ -1,4 +1,4 @@
-## Essa classe representa uma "pessoa" e seus atributos genotípicos e fenotípicos de sangue. A classe tem os seguintes métodos:
+## Essa classe "Individual" representa uma "pessoa" e seus atributos genotípicos e fenotípicos de sangue. A classe tem os seguintes métodos:
 
 ## __init__(self, genotype: str, name: str = None): esse é o construtor da classe, que é chamado quando se cria uma nova instância da classe. Ele recebe um parâmetro genotype, que representa o genótipo da pessoa e é uma string com um dos seguintes valores possíveis: "AA", "Ai", "BB", "Bi", "AB", "ii". Também existe a opção de passar um nome para a pessoa (name), que é uma string. Se o nome não for passado, ele será definido como "IndivN", onde N é um número sequencial de cada instância da classe. Além disso, esse método calcula e atribui os valores para os atributos blood_type, agglutinogens e agglutinins, que são os tipos de sangue aglutinógenos e aglutininas da pessoa, respectivamente.
 
