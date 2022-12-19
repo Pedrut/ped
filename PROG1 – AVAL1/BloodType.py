@@ -1,5 +1,10 @@
+
+## Essa classe "Individual" representa uma "pessoa" e seus atributos genotípicos e fenotípicos de sangue. A classe tem os seguintes métodos:
+
 class Individual:
     _next_name_number = 1
+
+## __init__(self, genotype: str, name: str = None): esse é o construtor da classe, que é chamado quando se cria uma nova instância da classe. Ele recebe um parâmetro genotype, que representa o genótipo da pessoa e é uma string com um dos seguintes valores possíveis: "AA", "Ai", "BB", "Bi", "AB", "ii". Também existe a opção de passar um nome para a pessoa (name), que é uma string. Se o nome não for passado, ele será definido como "IndivN", onde N é um número sequencial de cada instância da classe. Além disso, esse método calcula e atribui os valores para os atributos blood_type, agglutinogens e agglutinins, que são os tipos de sangue aglutinógenos e aglutininas da pessoa, respectivamente.
 
     def __init__(self, genotype: str, name: str = None):
         if genotype not in ["AA", "Ai", "BB", "Bi", "AB", "ii"]:
@@ -15,29 +20,43 @@ class Individual:
             Individual._next_name_number += 1
         else:
             self._name = name
+            
+## __str__(self): esse método é chamado quando a classe é convertida para uma string, quando é printada ou usada em uma concatenação de strings. Ele retorna o nome da pessoa.
 
     def __str__(self):
         return self._name
+    
+## name(self): esse é um método de "getter" para o atributo name da pessoa. Ele retorna o nome da pessoa.
 
     @property
     def name(self):
         return self._name
+    
+## genotype(self): esse é um método de "getter" para o atributo genotype da pessoa. Ele retorna o genótipo da pessoa.
 
     @property
     def genotype(self):
         return self._genotype
+    
+## blood_type(self): esse é um método de "getter" para o atributo blood_type da pessoa. Ele retorna o tipo de sangue da pessoa.
 
     @property
     def blood_type(self):
         return self._blood_type
+    
+## agglutinogens(self): esse é um método de "getter" para o atributo agglutinogens da pessoa. Ele retorna os aglutinógenos da pessoa.
 
     @property
     def agglutinogens(self):
         return self._agglutinogens
+    
+## agglutinins(self): esse é um método de "getter" para o atributo agglutinins da pessoa. Ele retorna as aglutininas da pessoa.
 
     @property
     def agglutinins(self):
         return self._agglutinins
+    
+## _get_blood_type(self): esse método é usado para calcular o tipo de sangue da pessoa. Ele usa o genótipo da pessoa para determinar se o tipo de sangue é "A", "B", "AB" ou "O".
 
     def _get_blood_type(self):
         if self._genotype == "AA" or self._genotype == "Ai":
@@ -48,6 +67,8 @@ class Individual:
             return "AB"
         else:
             return "O"
+        
+## _get_agglutinogens(self): esse método é usado para calcular os aglutinógenos da pessoa.
 
     def _get_agglutinogens(self):
         agglutinogens = set()
