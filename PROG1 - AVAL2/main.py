@@ -1,3 +1,5 @@
+#Dança Indígena - Pedro Felipe
+
 def dance(dancers, steps):
     n = len(dancers)
     direction = [1 if dancer[1] == 1 else -1 for dancer in dancers]
