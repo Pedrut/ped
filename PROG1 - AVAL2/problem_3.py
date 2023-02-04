@@ -1,3 +1,5 @@
+#Pedro Felipe
+
 def verbo_ou_nao(palavra):
     verbos = ["en", "es", "ei", "em", "est", "e", "im", "ai","os","na","am"]
     for verbo in verbos:
