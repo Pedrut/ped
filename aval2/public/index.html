@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Consulta de Resultados</title>
+</head>
+<body>
+    <div class="container">
+        <h1>CONSULTA</h1>
+        <div>
+            <label for="consultaTipo">Tipo De Consulta:</label>
+            <select id="consultaTipo" onchange="toggleFields()">
+                <option value="candidato">Candidato</option>
+                <option value="cargo">Cargo</option>
+            </select>
+        </div>
+        <div id="nomeCandidatoContainer">
+            <label for="nomeCandidato">Nome do Candidato:</label>
+            <input type="text" id="nomeCandidato" placeholder="Informe o nome do candidato">
+        </div>
+        <div id="filtroEleicaoContainer" style="display:none;">
+            <label for="filtroEleicao">Filtrar por:</label>
+            <select id="filtroEleicao">
+            </select>
+        </div>
+        <button onclick="realizarConsulta()">Consultar</button>
+        <div id="resultadoConsulta"></div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
