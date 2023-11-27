@@ -1,0 +1,23 @@
+body {
+    background-image: linear-gradient(rgb(55, 242, 255), rgb(172, 0, 106), rgb(251, 255, 1));
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-image: url("https://w0.peakpx.com/wallpaper/696/285/HD-wallpaper-galaxies-pixel-art.jpg");
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.container {
+    /* Estilos para o contêiner das imagens */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+

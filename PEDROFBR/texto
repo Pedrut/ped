@@ -1,0 +1,9 @@
+Requisitos e funcionalidades:
+
+a tela principal do web site deverá exibir um conjunto de 8 imagens selecionadas aleatoriamente pela propria API 
+
+Para cada imagem apresentada na tela principal deverão ser exibidos seu titulo e data 
+
+deverá haver uma opção visiual (link ou botão) para atualização das imagens na tela 
+
+caso alguns dos campos (metadados) da imagem sejam disponibilizados pela API, o aplicativo deve lidar adequadamente com este fato 
