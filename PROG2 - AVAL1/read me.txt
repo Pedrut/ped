@@ -1,9 +1,0 @@
-Este código define uma hierarquia de classes para lidar com diferentes formatos de dados (CSV, TSV, JSON e XML) e fornece a capacidade de carregar, salvar, limpar e obter informações sobre os dados. Cada formato de dados possui sua própria classe, derivada da classe abstrata Data. As classes CSVData e TSVData são subclasse da classe abstrata DelimitedData, que define o método get delimiter para obter o delimitador correto para cada formato.
-
-As classes CSVData, TSVData, JSONData e XMLData implementam os métodos abstratos definidos na classe Data. Cada uma dessas classes tem sua própria implementação para carregar dados a partir de um arquivo, salvar dados em um arquivo, limpar os dados e obter informações sobre os dados. Além disso, a classe JSONData tem uma implementação específica para extrair os nomes dos campos a partir dos dados JSON e a classe XMLData tem implementações específicas para extrair os nomes dos campos e os dados a partir dos elementos XML.
-
-No método main, um exemplo de uso é mostrado. Primeiro, os dados são carregados a partir de arquivos nos diferentes formatos (CSV, TSV, JSON e XML), e em seguida, a string que representa os dados é impressa. Em seguida, os dados são limpos para que estejam prontos para serem usados novamente. No final, um exemplo de salvar os dados em um novo arquivo XML é mostrado. Se ocorrer algum erro durante a execução, uma mensagem de erro será exibida.
-
-Lembre-se de ajustar o código de acordo com a estrutura dos seus arquivos de dados. Certifique-se de que os arquivos de exemplo (sample.csv, sample.tsv, sample.json e sample.xml) existam no diretório especificado.
-
-É importante que o XML seja importado. 
